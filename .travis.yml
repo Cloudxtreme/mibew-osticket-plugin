@@ -9,3 +9,10 @@ php:
     - hhvm
 
 script: phpunit tests
+
+notifications:
+    email:
+        recipients:
+            - support@oaklibrary.com
+        on_success: change
+        on_failure: always
